@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC9866D023C2B0660053F58D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9866CF23C2B0660053F58D /* AppDelegate.swift */; };
+		DC9866D223C2B0660053F58D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9866D123C2B0660053F58D /* ViewController.swift */; };
+		DC9866D423C2B0680053F58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9866D323C2B0680053F58D /* Assets.xcassets */; };
+		DC9866D723C2B0680053F58D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9866D523C2B0680053F58D /* Main.storyboard */; };
+		DC9866E623C2B17C0053F58D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9866E523C2B17C0053F58D /* AppDelegate.swift */; };
+		DC9866E823C2B17C0053F58D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9866E723C2B17C0053F58D /* ViewController.swift */; };
+		DC9866EA23C2B17D0053F58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9866E923C2B17D0053F58D /* Assets.xcassets */; };
+		DC9866ED23C2B17D0053F58D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9866EB23C2B17D0053F58D /* Main.storyboard */; };
+		DC9866F523C2B1B90053F58D /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9866F423C2B1B90053F58D /* ServiceManagement.framework */; };
+		DC9866F723C2B2BA0053F58D /* LoginItem Sample Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC9866E323C2B17C0053F58D /* LoginItem Sample Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC9866F623C2B2470053F58D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				DC9866F723C2B2BA0053F58D /* LoginItem Sample Launcher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DC9866CC23C2B0660053F58D /* LoginItem Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoginItem Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9866CF23C2B0660053F58D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC9866D123C2B0660053F58D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC9866D323C2B0680053F58D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC9866D623C2B0680053F58D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC9866D823C2B0680053F58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9866D923C2B0680053F58D /* LoginItem_Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginItem_Sample.entitlements; sourceTree = "<group>"; };
+		DC9866E323C2B17C0053F58D /* LoginItem Sample Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoginItem Sample Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9866E523C2B17C0053F58D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC9866E723C2B17C0053F58D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC9866E923C2B17D0053F58D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC9866EC23C2B17D0053F58D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC9866EE23C2B17D0053F58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9866EF23C2B17D0053F58D /* LoginItem_Sample_Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginItem_Sample_Launcher.entitlements; sourceTree = "<group>"; };
+		DC9866F423C2B1B90053F58D /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC9866C923C2B0660053F58D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9866F523C2B1B90053F58D /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9866E023C2B17C0053F58D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC9866C323C2B0660053F58D = {
+			isa = PBXGroup;
+			children = (
+				DC9866CE23C2B0660053F58D /* LoginItem Sample */,
+				DC9866E423C2B17C0053F58D /* LoginItem Sample Launcher */,
+				DC9866CD23C2B0660053F58D /* Products */,
+				DC9866F323C2B1B90053F58D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC9866CD23C2B0660053F58D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC9866CC23C2B0660053F58D /* LoginItem Sample.app */,
+				DC9866E323C2B17C0053F58D /* LoginItem Sample Launcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC9866CE23C2B0660053F58D /* LoginItem Sample */ = {
+			isa = PBXGroup;
+			children = (
+				DC9866CF23C2B0660053F58D /* AppDelegate.swift */,
+				DC9866D123C2B0660053F58D /* ViewController.swift */,
+				DC9866D323C2B0680053F58D /* Assets.xcassets */,
+				DC9866D523C2B0680053F58D /* Main.storyboard */,
+				DC9866D823C2B0680053F58D /* Info.plist */,
+				DC9866D923C2B0680053F58D /* LoginItem_Sample.entitlements */,
+			);
+			path = "LoginItem Sample";
+			sourceTree = "<group>";
+		};
+		DC9866E423C2B17C0053F58D /* LoginItem Sample Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				DC9866E523C2B17C0053F58D /* AppDelegate.swift */,
+				DC9866E723C2B17C0053F58D /* ViewController.swift */,
+				DC9866E923C2B17D0053F58D /* Assets.xcassets */,
+				DC9866EB23C2B17D0053F58D /* Main.storyboard */,
+				DC9866EE23C2B17D0053F58D /* Info.plist */,
+				DC9866EF23C2B17D0053F58D /* LoginItem_Sample_Launcher.entitlements */,
+			);
+			path = "LoginItem Sample Launcher";
+			sourceTree = "<group>";
+		};
+		DC9866F323C2B1B90053F58D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC9866F423C2B1B90053F58D /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC9866CB23C2B0660053F58D /* LoginItem Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9866DC23C2B0680053F58D /* Build configuration list for PBXNativeTarget "LoginItem Sample" */;
+			buildPhases = (
+				DC9866C823C2B0660053F58D /* Sources */,
+				DC9866C923C2B0660053F58D /* Frameworks */,
+				DC9866CA23C2B0660053F58D /* Resources */,
+				DC9866F623C2B2470053F58D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LoginItem Sample";
+			productName = "LoginItem Sample";
+			productReference = DC9866CC23C2B0660053F58D /* LoginItem Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC9866E223C2B17C0053F58D /* LoginItem Sample Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9866F023C2B17D0053F58D /* Build configuration list for PBXNativeTarget "LoginItem Sample Launcher" */;
+			buildPhases = (
+				DC9866DF23C2B17C0053F58D /* Sources */,
+				DC9866E023C2B17C0053F58D /* Frameworks */,
+				DC9866E123C2B17C0053F58D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LoginItem Sample Launcher";
+			productName = "LoginItem Sample Launcher";
+			productReference = DC9866E323C2B17C0053F58D /* LoginItem Sample Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC9866C423C2B0660053F58D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = zhaoxin;
+				TargetAttributes = {
+					DC9866CB23C2B0660053F58D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					DC9866E223C2B17C0053F58D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = DC9866C723C2B0660053F58D /* Build configuration list for PBXProject "LoginItem Sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC9866C323C2B0660053F58D;
+			productRefGroup = DC9866CD23C2B0660053F58D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC9866CB23C2B0660053F58D /* LoginItem Sample */,
+				DC9866E223C2B17C0053F58D /* LoginItem Sample Launcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC9866CA23C2B0660053F58D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9866D423C2B0680053F58D /* Assets.xcassets in Resources */,
+				DC9866D723C2B0680053F58D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9866E123C2B17C0053F58D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9866EA23C2B17D0053F58D /* Assets.xcassets in Resources */,
+				DC9866ED23C2B17D0053F58D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC9866C823C2B0660053F58D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9866D223C2B0660053F58D /* ViewController.swift in Sources */,
+				DC9866D023C2B0660053F58D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9866DF23C2B17C0053F58D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9866E823C2B17C0053F58D /* ViewController.swift in Sources */,
+				DC9866E623C2B17C0053F58D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC9866D523C2B0680053F58D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9866D623C2B0680053F58D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC9866EB23C2B17D0053F58D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9866EC23C2B17D0053F58D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC9866DA23C2B0680053F58D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC9866DB23C2B0680053F58D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DC9866DD23C2B0680053F58D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "LoginItem Sample/LoginItem_Sample.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 96NM39SGJ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "LoginItem Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.LoginItem-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC9866DE23C2B0680053F58D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "LoginItem Sample/LoginItem_Sample.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 96NM39SGJ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "LoginItem Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.LoginItem-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DC9866F123C2B17D0053F58D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "LoginItem Sample Launcher/LoginItem_Sample_Launcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 96NM39SGJ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "LoginItem Sample Launcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.LoginItem-Sample-Launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC9866F223C2B17D0053F58D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "LoginItem Sample Launcher/LoginItem_Sample_Launcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 96NM39SGJ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "LoginItem Sample Launcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.LoginItem-Sample-Launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC9866C723C2B0660053F58D /* Build configuration list for PBXProject "LoginItem Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9866DA23C2B0680053F58D /* Debug */,
+				DC9866DB23C2B0680053F58D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9866DC23C2B0680053F58D /* Build configuration list for PBXNativeTarget "LoginItem Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9866DD23C2B0680053F58D /* Debug */,
+				DC9866DE23C2B0680053F58D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9866F023C2B17D0053F58D /* Build configuration list for PBXNativeTarget "LoginItem Sample Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9866F123C2B17D0053F58D /* Debug */,
+				DC9866F223C2B17D0053F58D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC9866C423C2B0660053F58D /* Project object */;
+}
