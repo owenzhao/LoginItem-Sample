@@ -18,11 +18,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         setAutoStart()
         setupMenubarTray()
         ProcessInfo.processInfo.disableSuddenTermination()
+        setupWorkspaceNotifications()
         
         if UserDefaults.shared.bool(forKey: UserDefaults.Key.autoLaunchWhenUserLogin.rawValue) {
             UserDefaults.shared.set(false, forKey: UserDefaults.Key.autoLaunchWhenUserLogin.rawValue)
         } else {
-            mouseLeftButtonClicked()
+            showWindow()
         }
     }
     
@@ -119,20 +120,17 @@ extension AppDelegate {
     }
     
     private func showWindow() {
-        if window == nil {
-            let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
-            let windowController = storyboard.instantiateController(withIdentifier: "mainWindowController") as! NSWindowController
-            
-            window = windowController.window
-            window?.delegate = self
-        }
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "mainWindowController") as! NSWindowController
+        
+        window = windowController.window
+        window?.delegate = self
         
         showInDock()
         window!.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
         
         NotificationCenter.default.addObserver(self, selector: #selector(setAutoStart), name: ViewController.autoStartDidChange, object: nil)
-        setupWorkspaceNotifications()
     }
     
     private func hide() {
