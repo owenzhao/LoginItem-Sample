@@ -17,6 +17,9 @@
 		DC9866ED23C2B17D0053F58D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9866EB23C2B17D0053F58D /* Main.storyboard */; };
 		DC9866F523C2B1B90053F58D /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9866F423C2B1B90053F58D /* ServiceManagement.framework */; };
 		DC9866F723C2B2BA0053F58D /* LoginItem Sample Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC9866E323C2B17C0053F58D /* LoginItem Sample Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCB7AF2A23CAD58F00D358B2 /* MouseRightClickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7AF2923CAD58F00D358B2 /* MouseRightClickView.swift */; };
+		DCB7AF2C23CB066900D358B2 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7AF2B23CB066900D358B2 /* UserDefaults+Extension.swift */; };
+		DCB7AF2D23CB066900D358B2 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7AF2B23CB066900D358B2 /* UserDefaults+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +51,8 @@
 		DC9866EE23C2B17D0053F58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC9866EF23C2B17D0053F58D /* LoginItem_Sample_Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginItem_Sample_Launcher.entitlements; sourceTree = "<group>"; };
 		DC9866F423C2B1B90053F58D /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		DCB7AF2923CAD58F00D358B2 /* MouseRightClickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseRightClickView.swift; sourceTree = "<group>"; };
+		DCB7AF2B23CB066900D358B2 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,8 @@
 			children = (
 				DC9866CF23C2B0660053F58D /* AppDelegate.swift */,
 				DC9866D123C2B0660053F58D /* ViewController.swift */,
+				DCB7AF2923CAD58F00D358B2 /* MouseRightClickView.swift */,
+				DCB7AF2B23CB066900D358B2 /* UserDefaults+Extension.swift */,
 				DC9866D323C2B0680053F58D /* Assets.xcassets */,
 				DC9866D523C2B0680053F58D /* Main.storyboard */,
 				DC9866D823C2B0680053F58D /* Info.plist */,
@@ -225,6 +232,8 @@
 			files = (
 				DC9866D223C2B0660053F58D /* ViewController.swift in Sources */,
 				DC9866D023C2B0660053F58D /* AppDelegate.swift in Sources */,
+				DCB7AF2C23CB066900D358B2 /* UserDefaults+Extension.swift in Sources */,
+				DCB7AF2A23CAD58F00D358B2 /* MouseRightClickView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC9866E823C2B17C0053F58D /* ViewController.swift in Sources */,
+				DCB7AF2D23CB066900D358B2 /* UserDefaults+Extension.swift in Sources */,
 				DC9866E623C2B17C0053F58D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

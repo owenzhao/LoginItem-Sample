@@ -12,6 +12,8 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        UserDefaults.shared.set(true, forKey: UserDefaults.Key.autoLaunchWhenUserLogin.rawValue)
+        
         let pathComponents = Bundle.main.bundleURL.pathComponents
         let mainRange = 0..<(pathComponents.count - 4)
         let mainPath = pathComponents[mainRange].joined(separator: "/")
