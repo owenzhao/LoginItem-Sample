@@ -20,8 +20,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         ProcessInfo.processInfo.disableSuddenTermination()
         setupWorkspaceNotifications()
         
-        if UserDefaults.shared.bool(forKey: UserDefaults.Key.autoLaunchWhenUserLogin.rawValue) {
-            UserDefaults.shared.set(false, forKey: UserDefaults.Key.autoLaunchWhenUserLogin.rawValue)
+        if UserDefaults.shared.bool(forKey: UserDefaults.Key.startFromLauncher.rawValue) {
+            UserDefaults.shared.set(false, forKey: UserDefaults.Key.startFromLauncher.rawValue)
         } else {
             showWindow()
         }

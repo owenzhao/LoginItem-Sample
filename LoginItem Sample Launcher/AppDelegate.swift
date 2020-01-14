@@ -12,7 +12,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        UserDefaults.shared.set(true, forKey: UserDefaults.Key.autoLaunchWhenUserLogin.rawValue)
+        UserDefaults.shared.set(true, forKey: UserDefaults.Key.startFromLauncher.rawValue)
         
         let pathComponents = Bundle.main.bundleURL.pathComponents
         let mainRange = 0..<(pathComponents.count - 4)

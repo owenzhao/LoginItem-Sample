@@ -12,5 +12,6 @@ extension UserDefaults {
     public static let shared = UserDefaults(suiteName: "96NM39SGJ5.group.com.parussoft.LoginItem-Sample.shared")!
     public enum Key:String {
         case autoLaunchWhenUserLogin
+        case startFromLauncher
     }
 }
