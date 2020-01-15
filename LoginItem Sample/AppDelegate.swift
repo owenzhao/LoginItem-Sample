@@ -168,12 +168,17 @@ extension AppDelegate:NSWindowDelegate {
 extension AppDelegate {
     private func setupWorkspaceNotifications() {
         let center = NSWorkspace.shared.notificationCenter
+        center.addObserver(self, selector: #selector(didWake(_:)), name: NSWorkspace.didWakeNotification, object: nil)
         center.addObserver(self, selector: #selector(willSleep(_:)), name: NSWorkspace.willSleepNotification, object: nil)
         center.addObserver(self, selector: #selector(willPowerOff(_:)), name: NSWorkspace.willPowerOffNotification, object: nil)
     }
     
+    @objc private func didWake(_ noti:Notification) {
+        ProcessInfo.processInfo.disableSuddenTermination()
+    }
+    
     @objc private func willSleep(_ noti:Notification) {
-        quit()
+        ProcessInfo.processInfo.enableSuddenTermination()
     }
     
     @objc private func willPowerOff(_ noti:Notification) {
