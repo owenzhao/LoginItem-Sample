@@ -20,7 +20,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         ProcessInfo.processInfo.disableSuddenTermination()
         setupWorkspaceNotifications()
         
-        if UserDefaults.shared.bool(forKey: UserDefaults.Key.startFromLauncher.rawValue) {
+        if #available(macOS 13, *) {
+            if let userInfo = aNotification.userInfo as? [String:Any],
+               let isDefault = userInfo[NSApplication.launchIsDefaultUserInfoKey] as? Bool {
+                if isDefault {
+                    showWindow()
+                }
+            }
+        } else if UserDefaults.shared.bool(forKey: UserDefaults.Key.startFromLauncher.rawValue) {
             UserDefaults.shared.set(false, forKey: UserDefaults.Key.startFromLauncher.rawValue)
         } else {
             showWindow()
@@ -29,6 +36,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc private func setAutoStart() {
         let shouldEnable = UserDefaults.standard.bool(forKey: ViewController.autoStart)
+        
+        if #available(macOS 13, *) {
+            if shouldEnable {
+                try? SMAppService.mainApp.register()
+            } else {
+                try? SMAppService.mainApp.unregister()
+            }
+        }
         
         if !SMLoginItemSetEnabled("com.parussoft.LoginItem-Sample-Launcher" as CFString, shouldEnable) {
             print("Login Item Was Not Successful")
