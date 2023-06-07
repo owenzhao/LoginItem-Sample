@@ -20,14 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         ProcessInfo.processInfo.disableSuddenTermination()
         setupWorkspaceNotifications()
         
-        if #available(macOS 13, *) {
-            if let userInfo = aNotification.userInfo as? [String:Any],
-               let isDefault = userInfo[NSApplication.launchIsDefaultUserInfoKey] as? Bool {
-                if isDefault {
-                    showWindow()
-                }
-            }
-        } else if UserDefaults.shared.bool(forKey: UserDefaults.Key.startFromLauncher.rawValue) {
+        if UserDefaults.shared.bool(forKey: UserDefaults.Key.startFromLauncher.rawValue) {
             UserDefaults.shared.set(false, forKey: UserDefaults.Key.startFromLauncher.rawValue)
         } else {
             showWindow()
@@ -38,10 +31,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let shouldEnable = UserDefaults.standard.bool(forKey: ViewController.autoStart)
         
         if #available(macOS 13, *) {
-            if shouldEnable {
-                try? SMAppService.mainApp.register()
-            } else {
-                try? SMAppService.mainApp.unregister()
+            do {
+                if shouldEnable {
+                    try SMAppService.loginItem(identifier: "com.parussoft.LoginItem-Sample-Launcher").register()
+                } else {
+                    try SMAppService.loginItem(identifier: "com.parussoft.LoginItem-Sample-Launcher").unregister()
+                }
+            } catch {
+                print(error)
             }
         }
         
